@@ -1,0 +1,44 @@
+<h1 class="header">Edit racer</h1>
+<%= form_for(@racer) do |f| %>
+  <% if @racer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@racer.errors.count, "error") %> prohibited this racer from being saved:</h2>
+
+      <ul>
+      <% @racer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <table class = "center">
+      <tr>
+        <td><%= f.label :number %></td>
+        <td><%= f.number_field :number %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :first_name  %></td>
+        <td><%= f.text_field :first_name %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :last_name  %></td>
+        <td><%= f.text_field :last_name %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :gender %></td>
+        <td><%= f.text_field :gender %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :group %></td>
+        <td><%= f.text_field :group %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :secs %></td>
+        <td><%= f.number_field :secs %></td>
+      </tr>
+    </table>
+
+  <div class="actions center">
+    <%= f.submit "SAVE"%>
+  </div>
+<% end %>

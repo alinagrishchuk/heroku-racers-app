@@ -1,0 +1,39 @@
+<h1 class="header">Racer</h1>
+<table class="center">
+  <tr>
+    <td>Number:</td>
+    <td><%= @racer.number %></td>
+  </tr>
+
+  <tr>
+    <td>First name:</td>
+    <td><%= @racer.first_name %></td>
+  </tr>
+
+  <tr>
+    <td>Last name:</td>
+    <td><%= @racer.last_name %></td>
+  </tr>
+
+  <tr>
+    <td>Gender</td>
+    <td><%= @racer.gender %></td>
+  </tr>
+
+  <tr>
+    <td>Group:</td>
+    <td><%= @racer.group %></td>
+  </tr>
+
+  <tr>
+    <td>Secs:</td>
+    <td><%= @racer.secs %></td>
+  </tr>
+</table>
+<div class="center">
+  <%= link_to 'Edit', edit_racer_path(@racer) %> |
+  <%= link_to 'Back', racers_path %>
+</div>
+
+
+

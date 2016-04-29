@@ -1,0 +1,98 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+    margin-top: 0;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    margin: 0;
+    font-size: 2em;
+}
+.header {
+    line-height: 2;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 1em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even){
+    background-color: rgba(239, 239, 239, 0.91);
+}
+tr:hover {
+    background-color: #e5e8f5;
+ }
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1em;
+    color: rgba(102, 102, 102, 0.64);
+    line-height: 1.1;
+    letter-spacing: 3px;
+}
+a:hover {
+    color: #000;
+}
+.pagination {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.center {
+  width: 50%;
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.center p {
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+}
+p strong {
+    width: 30%;
+    display: block;
+    float: left;
+}
+
+input{
+    width: 100%;
+    border: 1px;
+    background-color: transparent;
+}
+input[type="submit"]{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 6px;
+}
